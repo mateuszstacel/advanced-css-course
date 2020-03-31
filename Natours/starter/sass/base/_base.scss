@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // this define what 1rem is default font size on web is 16px;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem;
+  box-sizing: border-box;
+}
