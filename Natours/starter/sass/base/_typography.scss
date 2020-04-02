@@ -1,4 +1,4 @@
-@import "../abstracts//variables";
+@import "../abstracts/variables";
 
 .body {
   font-family: "Lato", sans-serif;
@@ -35,5 +35,43 @@
     animation-timing-function: ease-out;
     /*   animation-iteration-count: 3; */
     /*   animation-delay: 3s; */
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.5);
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #544e4e;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  color: #544e4e;
+  font-size: 1.3rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
