@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <form class="search" action="" class="header__search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="search hotels"
+          />
+          <button class="search__button">
+            <i class="fas fa-search search__button--icon"></i>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <i class="far fa-bookmark user-nav__icon-box--icon"></i>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="far fa-comments"></i>
+            <span class="user-nav__notification">9</span>
+          </div>
+          <img src="img/user-1.jpg" alt="" class="user-nav__user-photo" />
+          <span class="user-nav__user-name">Mateusz</span>
+        </nav>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          NAVIGATION
+        </nav>
+        <main class="hotel-view">
+          hotel view
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
