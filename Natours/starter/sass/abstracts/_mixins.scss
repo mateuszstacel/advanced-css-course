@@ -5,3 +5,28 @@
     clear: both;
   }
 }
+
+/*
+
+MEDIA QUERY MANAGER
+
+0 - 600 PX PHONE
+600 - 900 PX TABLET
+900 - 1200 PX TABLET LANDSCAPE
+[1200 - 1800] NORMAL STYLES APPLY
+1800  + bIG DESKTOP
+*/
+
+@mixin media-query-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+
+  /*break point argument choises
+  - PHONE
+  - tab-port
+  - tab LANDSCAPE
+  -big DESKTOP
+  */
+  /* z  */
+}
